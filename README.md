@@ -5,7 +5,6 @@
 ![Type](https://img.shields.io/badge/Application-Desktop-brightgreen)
 ![Frame](https://img.shields.io/badge/Design-Single%20JFrame-blueviolet)
 ![Status](https://img.shields.io/badge/Project-Completed-success)
-![License](https://img.shields.io/badge/License-Educational-lightgrey)
 
 ---
 
