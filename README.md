@@ -1,96 +1,184 @@
-# 🏧 ATM Management System (Java GUI - Single Frame)
+# 🏧 ATM Management System (Java GUI)
 
-This project is a GUI-based ATM Machine Simulation developed using Java Swing.
-
-The entire application runs inside **one single JFrame**.  
-There are no multiple windows or extra frames used in this project.
-
-All user interactions (Login and ATM operations) are handled within the same frame.
+![Java](https://img.shields.io/badge/Java-17+-blue)
+![GUI](https://img.shields.io/badge/GUI-Swing-orange)
+![Type](https://img.shields.io/badge/Application-Desktop-brightgreen)
+![Frame](https://img.shields.io/badge/Design-Single%20JFrame-blueviolet)
+![Status](https://img.shields.io/badge/Project-Completed-success)
+![License](https://img.shields.io/badge/License-Educational-lightgrey)
 
 ---
 
 ## 📌 Project Overview
 
-The ATM Management System simulates basic banking operations.
+The ATM Management System is a Java-based desktop application developed using Java Swing.
+It simulates real-world ATM functionality where a user can log in, select a city, and perform banking operations such as deposit, withdrawal, transfer, balance checking, and viewing transaction history.
 
-When the application starts, the user must:
+The entire application runs inside **one single JFrame**. No multiple frames or extra windows are created. All interactions including login and ATM operations are handled within the same main window.
 
-- Enter User ID
-- Enter PIN (Password)
-- Select City (ATM Location)
+This project demonstrates:
 
-After successful login, the user can perform different ATM operations.
-
----
-
-## 🔐 Default Account Details
-
-User ID  : user123  
-PIN      : 1234  
-Initial Balance : ₹10,000  
-
-Available Cities:
-- Delhi
-- Mumbai
-- Bangalore
-- Chennai
-- Kolkata
-
-These details can be modified inside the code.
+* Object-Oriented Programming (OOP)
+* GUI Development using Swing
+* Event-Driven Programming
+* Transaction Management
+* Balance Validation Logic
 
 ---
 
-## 🚀 Features
+## 🔐 Default Login Credentials
 
-- Login Authentication
-- City Selection
-- Deposit Money
-- Withdraw Money
-- Transfer Money
-- Check Balance
-- Transaction History
-- Exit Option
+| Field           | Value   |
+| --------------- | ------- |
+| User ID         | user123 |
+| PIN             | 1234    |
+| Initial Balance | ₹10,000 |
 
-All features are displayed and controlled inside the same main frame.
+### 🏙 Available Cities
 
----
+* Delhi
+* Mumbai
+* Bangalore
+* Chennai
+* Kolkata
 
-## 🏗 Project Files
-
-- ATMSystem.java (Main class)
-- ATMFrame.java (Only JFrame used in the project)
-- UserAccount.java (Account data and logic)
+> Credentials and balance are hardcoded inside `UserAccount.java` for academic purposes.
 
 ---
 
-## 🧠 How It Works
+## 🧩 System Modules
 
-1. The program starts and shows the login screen.
-2. The user enters credentials and selects a city.
-3. After successful validation, ATM functions become available.
-4. Transactions update the balance.
-5. Transaction history stores all operations with city information.
-6. The application runs continuously inside one frame until the user exits.
+### 1️⃣ Login Module
+
+* Accepts User ID
+* Accepts PIN
+* Allows City Selection (Dropdown Menu)
+* Validates credentials
+* Displays error for invalid login
+* Redirects to ATM dashboard on success
+
+### 2️⃣ ATM Dashboard Module
+
+After successful login, the user can:
+
+* 💰 Deposit Money
+* 💸 Withdraw Money
+* 🔁 Transfer Money
+* 💳 Check Current Balance
+* 📜 View Transaction History
+* 🚪 Exit Application
+
+All features operate inside the same JFrame.
 
 ---
 
-## 🛠 Technologies Used
+## 📊 Transaction Management
 
-- Java
-- Java Swing
-- OOP (Object-Oriented Programming)
-- ArrayList for transaction storage
+* Updates account balance after each transaction
+* Prevents withdrawal or transfer if balance is insufficient
+* Stores transaction type, amount, and selected city
+* Saves records using an ArrayList
+* Displays complete transaction history on request
 
 ---
 
-## ▶ How to Run
+## 🏗️ Project Architecture
 
-Compile:
+ATMSystem.java
+├── ATMFrame (Single JFrame)
+├── LoginPanel
+├── DashboardPanel
+└── UserAccount
+
+---
+
+## 📂 Project Structure
+
+ATM-Management-System/
+├── ATMSystem.java
+├── ATMFrame.java
+├── LoginPanel.java
+├── DashboardPanel.java
+├── UserAccount.java
+└── README.md
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose             |
+| ---------- | ------------------- |
+| Java       | Core Programming    |
+| Swing      | GUI Development     |
+| AWT        | Event Handling      |
+| OOP        | System Structure    |
+| ArrayList  | Transaction Storage |
+
+---
+
+## ▶️ How to Run
+
+Step 1: Compile
 javac *.java
 
-Run:
+Step 2: Run
 java ATMSystem
 
 ---
 
-This project is created for learning and academic purposes.
+## 🎯 Concepts Implemented
+
+* Classes & Objects
+* Encapsulation
+* ActionListener Events
+* Swing Components (JFrame, JPanel, JButton, JLabel, JTextField, JPasswordField, JComboBox, JOptionPane)
+* Layout Management
+* Balance Validation
+* Single Frame Application Design
+
+---
+
+## 🔒 System Limitations
+
+* Password stored as plain text (educational use only)
+* No database integration
+* Single-user simulation
+* Data not stored permanently
+* Not production-ready
+
+---
+
+## 🚀 Future Enhancements
+
+* MySQL Database Integration
+* Multiple User Accounts
+* PIN Change Feature
+* Date & Time in Transaction History
+* Receipt Generation (PDF)
+* Admin Panel
+* Enhanced UI using JavaFX
+
+---
+
+## 🎓 Academic Use
+
+Suitable for:
+
+* BCA Mini Project
+* BSc Computer Science
+* Diploma Final Year Project
+* Java GUI Assignment
+* OOP Lab Project
+
+---
+
+## 👨‍💻 Author
+
+Your Name
+Java Developer | Student Project
+
+---
+
+## 📄 License
+
+This project is developed for educational and academic purposes only.
