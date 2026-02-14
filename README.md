@@ -169,16 +169,3 @@ Suitable for:
 * Diploma Final Year Project
 * Java GUI Assignment
 * OOP Lab Project
-
----
-
-## 👨‍💻 Author
-
-Your Name
-Java Developer | Student Project
-
----
-
-## 📄 License
-
-This project is developed for educational and academic purposes only.
